@@ -1,0 +1,21 @@
+<div *ngIf="selectedPost else pleaseSelectPost">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>{{selectedPost.title}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>This card indeterminates progress bar.</p>
+            <p>{{selectedPost.body}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<ng-template #pleaseSelectPost>
+    <div>
+        <h4>Please Select Post</h4>
+    </div>
+</ng-template>

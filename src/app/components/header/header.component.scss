@@ -1,0 +1,47 @@
+@import '../../../variables.scss';
+
+.toolbar {
+    background-color: $main-theme !important;
+    color: #ffffff;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    .header__links {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            font-size: 1rem;
+            margin-left: 1rem;
+            padding: 0.4rem;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: $main-theme;
+
+            &:hover {
+                background-color: darken($main-theme, 10%);
+            }   
+
+            a {
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 900;
+                color: white;
+            }
+
+            &.active a {
+                color: salmon !important;
+            }
+
+
+        }
+    }
+
+    .example-spacer {
+        flex: 1 1 auto;
+    }
+}

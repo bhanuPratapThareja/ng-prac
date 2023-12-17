@@ -1,0 +1,13 @@
+.post__list {
+    margin: 1rem;
+   
+    
+    .post {
+        border-bottom: 1px solid #eee;
+        border-radius: 5px;
+        [role="listitem"]:hover {
+            background-color: #eee;
+            cursor: pointer;
+        }
+    }
+}

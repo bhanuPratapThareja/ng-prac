@@ -1,0 +1,21 @@
+.posts_page {
+    display: flex;
+
+    .posts__list {
+        flex: 2 1 auto;
+    }
+
+    .post__selected {
+        flex: 5 1 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+}
+
+.loading__posts--center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

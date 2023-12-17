@@ -1,0 +1,20 @@
+<mat-toolbar class="toolbar">
+    <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+
+    <ul class="header__links">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="">Home</a></li>
+        <li routerLinkActive="active"><a routerLink="about">About</a></li>
+        <li routerLinkActive="active"><a routerLink="posts">Posts</a></li>
+    </ul>
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button>
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>

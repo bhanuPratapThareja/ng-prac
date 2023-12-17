@@ -1,0 +1,16 @@
+<div *ngIf="posts.length else loadingPosts">
+    <div class="posts_page">
+        <div class="posts__list">
+            <app-post [posts]="posts" (selectedPost)="onPostSelected($event)"></app-post>
+        </div>
+        <div class="post__selected">
+            <app-post-selected [selectedPost]="currentSelectedPost"></app-post-selected>
+        </div>
+    </div>
+</div>
+
+<ng-template #loadingPosts>
+    <div class="loading__posts--center">
+        <h4 class="loading__posts-text">Loadin Posts...</h4>
+    </div>
+</ng-template>
